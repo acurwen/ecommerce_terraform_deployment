@@ -389,7 +389,7 @@ resource "aws_key_pair" "backend_key1" {
 
 output "backend_private_key1" {
   value     = tls_private_key.backend_key1.private_key_pem
-  sensitive = true
+  sensitive = false
 }
 
 #################################
@@ -408,7 +408,7 @@ resource "aws_key_pair" "backend_key2" {
 
 output "backend_private_key2" {
   value     = tls_private_key.backend_key2.private_key_pem
-  sensitive = true
+  sensitive = false
 }
 
 
